@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color ="dark">
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-avatar    slot="start" >
+      <img src="https://static.dw.com/image/58956274_303.jpg"/>
+    </ion-avatar>
+    <ion-label (click)="datos()"><h1>Hola </h1> </ion-label>
+  </ion-item>
+  
+  
+  <ion-item [routerLink] = "['/conductor']" >
+    <ion-avatar slot="start">
+      <img src="https://static.dw.com/image/58956274_303.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h1>Nombre</h1>
+      <p>destino</p>
+      <p>disponibilidad</p>
+      <p>hora de salida</p>
+    </ion-label>
+  </ion-item>
+  <ion-item [routerLink] = "['/conductor']" >
+    <ion-avatar slot="start">
+      <img src="https://static.dw.com/image/58956274_303.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h2>Nombre</h2>
+      <p>destino</p>
+      <p>disponibilidad</p>
+      <p>hora de salida</p>
+    </ion-label>
+  </ion-item>
+  <ion-item [routerLink] = "['/conductor']" >
+    <ion-avatar slot="start">
+      <img src="https://static.dw.com/image/58956274_303.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h2>Nombre</h2>
+      <h3>destino</h3>
+      <p>disponibilidad</p>
+      <p>hora de salida</p>
+    </ion-label>
+  </ion-item>
+  <ion-item [routerLink] = "['/conductor']" >
+    <ion-avatar slot="start">
+      <img src="https://static.dw.com/image/58956274_303.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h1>Nombre</h1>
+      <p>destino</p>
+      <p>disponibilidad</p>
+      <p>hora de salida</p>
+    </ion-label>
+  </ion-item>
+</ion-content>
+
+<ion-footer >
+  <ion-toolbar color="dark"  [routerLink] = "['/conductor']">
+    <ion-title> Quieres ser conductor?</ion-title>
+  </ion-toolbar>
+</ion-footer>
+

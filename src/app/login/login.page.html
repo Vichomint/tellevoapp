@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="dark ">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+
+    <ion-card >
+      <img src="https://i.ibb.co/2nSqTYD/logovichin-1.png" alt="logovichin-1" height="300px" width="100%">
+      <ion-card-header>
+        <ion-card-title>
+          Inicio de sesión
+        </ion-card-title>
+        
+      </ion-card-header>
+      <ion-card-content>
+        <form [formGroup] = "formularioLogin" >
+          <ion-item>
+            <ion-label position = "floating"> Correo</ion-label>
+            <ion-input formControlName = "nombre"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position = "floating"> Contraseña</ion-label>
+            <ion-input formControlName = "contraseña" Type = "password"></ion-input>
+          </ion-item>
+        </form>
+        <ion-button (click)="ingresar()" color="dark">
+          Ingresar
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color = "dark">
+    <ion-buttons slot="end">
+      <ion-button [routerLink] = "['/registro']">Registro</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

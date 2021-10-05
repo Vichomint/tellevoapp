@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color = "dark">
+    <ion-buttons slot="start">
+        <ion-back-button> </ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup] = "formularioRegistro" (keyup.enter)="Guardar()" >
+        <ion-item>
+          <ion-label position = "floating"> Correo</ion-label>
+          <ion-input formControlName = "nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position = "floating"> Contraseña</ion-label>
+          <ion-input formControlName = "contraseña" Type = "password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position = "floating"> Confirmar Contraseña</ion-label>
+          <ion-input formControlName = "ConfirmarContraseña" Type = "password"></ion-input>
+        </ion-item>
+      
+      <ion-button (click)="Guardar()" color="dark">
+        Registrarse
+      </ion-button>
+    </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
